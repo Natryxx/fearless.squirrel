@@ -27,6 +27,6 @@ A video game with three.js
 - [x] : As a player, I want to have a ground when I start the game
 - [x] : As a player, I want to see ennemy
 - [x] : As a player, I want to destroy ennemy when I shot them
-- [x] : As a ennemy, I want to move on one axe
-- [ ] : As a player, I want to decrease my life when I am touch by an ennemy
+- [] : As a ennemy, I want to move on one axe // working with keyboard 
+- [ ] : As a player, I want to decrease my life when I am touch by an ennemy // begin but not fully working
 - [ ] : As a player, I want to decrease my life when I fall 

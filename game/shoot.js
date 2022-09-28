@@ -37,6 +37,7 @@ function collisions()
     bullet_collision();
     bullet_collision_2();
     player_collision();
+    player_collision_2();
     player_falling();
 }
 
@@ -101,7 +102,22 @@ function player_collision()
         player1.graphic.position.y -= y - HEIGHT;
         player1.position.y -= y - HEIGHT;
     }
+}
 
+function player_collision_2()
+{
+    //collision between player and walls
+    var x = enemy1.graphic.position.x + WIDTH / 2;
+    var y = enemy1.graphic.position.y + HEIGHT / 2;
+
+    if (player1.position.x > enemy1.position.x - 20 &&
+            player1.position.x < enemy1.position.x + 20 &&
+            player1.position.y > enemy1.position.y - 20 &&
+            player1.position.y < enemy1.position.y + 20)
+        {
+            console.log("collision between spaceships");
+            player1.life -= 1;
+        }
 }
 
 function player_falling()
